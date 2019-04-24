@@ -1,0 +1,10 @@
+# Enter the configurations as seen below: <param> <value>
+# Only use 1 space between
+# Failure to do so WILL break something
+param value
+
+
+# Raspberry Pi parameters
+pi_cam_height 480
+pi_cam_width 640
+pi_cam_fps 32
