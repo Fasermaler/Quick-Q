@@ -1,6 +1,15 @@
 # Quick Q (QuQ)
 
-Quick Q (also known as QuQ) is a self-checkout solution for pre-packaged drinks in the SUTD Canteen. The project was done as part of the module: 10.009 Digital World.
+Quick Q (also known as QuQ) is a self-checkout solution for pre-packaged drinks in the SUTD Canteen. The project was done as part of the module: 10.009 Digital World. A demo video: `demo_video.mp4` can be found in this directory demonstrating the product functioning.
+
+This work was done with the combined work of the following team:
+
+- [Fasermaler](https://github.com/fasermaler)
+
+- [oliviergoals](https://github.com/oliviergoals)
+- [Etzernal](https://github.com/Etzernal)
+- Emily
+- Nigel
 
 ## Introduction
 
