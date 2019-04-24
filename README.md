@@ -23,7 +23,15 @@ Quick Q is a self-checkout solution for pre-packaged drinks using the following 
 
 Quick Q significantly reduces queue times as it requires no manpower and is able to scan multiple drinks simultaneously to allow for fast check-outs. Each sale is also recorded into an online Database, providing drinks store vendors with Data analytics needed to make smart business decisions.
 
-Do note that the project's original name was cutQ - thus the references within the code base. 
+Do note that the project's original name was cutQ - thus the references within the code base.
+
+## How to Run
+
+### To Run the Raspberry pi Code:
+
+Assuming the appropriate dependencies are installed, simply VNC/SSH into the Raspberry Pi of your choice and navigate to the Quick Q directory. Then type `python3 main.py` to run the script. 
+
+If using SSH, remember to run the command `export DISPLAY=:0` to ensure that the Kivy GUI will be displayed on the Raspberry Pi.
 
 ## Convenience Scripts
 
