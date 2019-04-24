@@ -16,6 +16,10 @@ Quick Q significantly reduces queue times as it requires no manpower and is able
 
 Do note that the project's original name was cutQ - thus the references within the code base. 
 
+## Convenience Scripts
+
+Under the `convenience scripts folder` there exists `updater.sh` and `setup.sh`. `setup.sh` will help in installing Quick-Q and all it's dependencies while `updater.sh` will update existing Quick-Q installs.
+
 ## Code Overview
 
 The following is a brief overview of the code used in the project. QuQ runs on python3 though some modifications can be made if the user desires to run it in python 2.7.
@@ -30,7 +34,7 @@ The following is code that runs on the Raspberry Pi 3B+ (the main end-user exper
 - Picamera
 - Firebase-admin SDK
 - _thread (or thread library python 2.7)
-- 
+- Kivy for python 3.7
 
 #### Main
 
@@ -387,6 +391,73 @@ if __name__ == '__main__':
 The vision class can be found in the `vision` folder. It contains many classes and the full documentation can be found in the markdown file `Vision Documentation.md`.
 
 #### Firebase
+
+##### Database Format
+
+The Firebase database format is as follows:
+
+Database is in the format below: 
+
+- Collection
+  - Document
+    - Data Entry in the form of a dictionary
+
+- Drink_day_count
+  - Morning
+    - drink name : count of drink purchased
+  - Afternoon
+    - drink name : count of drink purchased
+  - Evening
+    - drink name : count of drink purchased
+- Drink_month_count
+  - January
+    - drink name : count of drink purchased
+  - February 
+    - drink name : count of drink purchased
+  - March
+    - drink name : count of drink purchased
+  - April
+    - drink name : count of drink purchased
+  - May
+    - drink name : count of drink purchased
+  - June
+    - drink name : count of drink purchased
+  - July
+    - drink name : count of drink purchased
+  - August
+    - drink name : count of drink purchased
+  - September
+    - drink name : count of drink purchased
+  - October
+    - drink name : count of drink purchased
+  - November
+    - drink name : count of drink purchased
+  - December
+    - drink name : count of drink purchased
+- Drink_week_count
+  - Monday
+    - drink name : count of drink purchased
+  - Tuesday
+    - drink name : count of drink purchased
+  - Wednesday
+    - drink name : count of drink purchased
+  - Thursday
+    - drink name : count of drink purchased
+  - Friday
+    - drink name : count of drink purchased
+  - Saturday
+    - drink name : count of drink purchased
+- Drink_year_count
+  - 2018
+    - drink name : count of drink purchased
+  - 2019
+    - drink name : count of drink purchased
+- Today
+  - Today
+    - sale number for day : [list of drinks purchased for this sale]
+- Drink_prices
+  - Drink_prices
+    - aruco marker number: [drink name, unit price of drink]
 
 The firebase folder contains the following files:
 
